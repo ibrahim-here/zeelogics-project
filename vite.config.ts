@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Enable minification
-    minify: 'terser',
+    // Enable minification with esbuild (faster and built-in)
+    minify: 'esbuild',
     // Generate source maps for debugging
     sourcemap: false,
     // Optimize chunk size
