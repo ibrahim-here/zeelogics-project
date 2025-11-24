@@ -1,0 +1,78 @@
+import { motion } from 'framer-motion';
+import { Button } from '../ui';
+import DarkVeil from '../ui/DarkVeil';
+import { HERO_CONTENT } from '../../constants/content';
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative flex h-[60vh] flex-col items-center justify-center bg-dark overflow-visible pt-32 -mx-10"
+    >
+      {/* DarkVeil Background - Full Coverage */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full">
+          <DarkVeil 
+            hueShift={185}
+            noiseIntensity={0}
+            speed={2}
+            scanlineFrequency={0}
+            scanlineIntensity={0}
+            warpAmount={0}
+          />
+        </div>
+      </div>
+
+      {/* Content Container - No Glassmorphism */}
+      <div className="container mx-auto max-w-4xl text-center relative z-10 px-10">
+        {/* Eyebrow Text with Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="inline-block mb-6"
+        >
+          <span className="eyebrow px-4 py-2 rounded-full bg-neon/10 border border-neon/30 text-neon backdrop-blur-sm">
+            {HERO_CONTENT.eyebrow}
+          </span>
+        </motion.div>
+
+        {/* Main Heading */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 text-text-primary leading-tight"
+        >
+          {HERO_CONTENT.heading}
+        </motion.h1>
+
+        {/* Subheading */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="body-lg mb-10 text-text-secondary max-w-3xl mx-auto"
+        >
+          {HERO_CONTENT.subheading}
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        >
+          <Button variant="primary" size="lg" href="#contact">
+            {HERO_CONTENT.primaryCTA}
+          </Button>
+          <Button variant="secondary" size="lg" href="#projects">
+            {HERO_CONTENT.secondaryCTA}
+          </Button>
+        </motion.div>
+      </div>
+
+    </section>
+  );
+}
