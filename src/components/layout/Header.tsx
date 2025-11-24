@@ -24,7 +24,7 @@ export default function Header() {
         isScrolled ? 'bg-black/95 backdrop-blur-md' : 'bg-transparent'
       }`}
     >
-      <nav className="px-10 py-4">
+      <nav className="px-5 md:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - Left */}
           <a

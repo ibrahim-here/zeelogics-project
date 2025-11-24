@@ -10,7 +10,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark px-10 relative">
+    <div className="min-h-screen bg-dark px-5 md:px-10 relative">
       {/* Header */}
       <Header />
 
