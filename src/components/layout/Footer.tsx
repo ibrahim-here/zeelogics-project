@@ -3,7 +3,7 @@ import { FOOTER_CONTENT } from '../../constants/content';
 import logo from '../../assets/zeelogics.png';
 
 export default function Footer() {
-  const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
+  const iconMap: Record<string, React.ElementType> = {
     Linkedin,
     Twitter,
     Github,

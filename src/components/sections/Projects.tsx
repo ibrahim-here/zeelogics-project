@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import projectAlfa from '../../assets/projects/project-alfa.PNG';
+import projectAlfa from '../../assets/projects/project-alfa.PNG?url';
 import alfaMobile from '../../assets/projects/alfa-verputzer-mobile.png';
 import luckyImage from '../../assets/projects/lucky.png';
 import ndisImage from '../../assets/projects/ndis.png';

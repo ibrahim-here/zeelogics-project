@@ -1,7 +1,6 @@
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import Projects from './components/sections/Projects';
-import AboutUs from './components/sections/AboutUs';
 import WhyChooseUs from './components/sections/WhyChooseUs';
 import Services from './components/sections/Services';
 import HowWeWork from './components/sections/HowWeWork';

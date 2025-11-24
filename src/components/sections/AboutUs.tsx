@@ -3,7 +3,7 @@ import { ABOUT_CONTENT, ABOUT_ATTRIBUTES } from '../../constants/content';
 import { Zap, Target, Award } from 'lucide-react';
 
 export default function AboutUs() {
-  const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  const iconMap: Record<string, React.ElementType> = {
     Zap,
     Target,
     Award,
