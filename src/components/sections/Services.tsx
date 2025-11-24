@@ -25,16 +25,16 @@ export default function Services() {
         </div>
 
         {/* Bento Grid Wrapper with Charcoal Background */}
-        <div className="bg-charcoal rounded-3xl p-10">
+        <div className="bg-charcoal rounded-3xl p-6 md:p-10">
           {/* Bento Grid - Custom Layout */}
-          <div className="flex flex-col md:flex-row gap-6">
-          {/* Left Column - 60% - Web Design & Development with Video */}
+          <div className="flex flex-col gap-6">
+          {/* Web Design & Development with Video */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
-            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 w-full md:w-[60%] min-h-[600px] flex flex-col justify-end p-8 rounded-2xl"
+            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 w-full min-h-[400px] md:min-h-[600px] flex flex-col justify-end p-6 md:p-8 rounded-2xl"
           >
             <div className="absolute inset-0 z-0">
               <video
@@ -56,16 +56,14 @@ export default function Services() {
             </div>
           </motion.div>
 
-          {/* Right Column - 40% */}
-          <div className="flex flex-col gap-6 w-full md:w-[40%]">
-            {/* Top Row - AI Automation */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[280px] flex flex-col justify-end p-8 rounded-2xl"
-            >
+          {/* AI Automation */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[250px] md:min-h-[280px] flex flex-col justify-end p-6 md:p-8 rounded-2xl"
+          >
               <div className="absolute inset-0 z-0">
                 <img
                   src="https://i.pinimg.com/1200x/73/07/9c/73079cb83aedc740eb8daffe2665abcc.jpg"
@@ -80,19 +78,16 @@ export default function Services() {
                   Intelligent workflows that save time and boost productivity.
                 </p>
               </div>
-            </motion.div>
+          </motion.div>
 
-            {/* Bottom Row - 2 columns */}
-            <div className="flex gap-6">
-              {/* Left - 2D and 3D stacked */}
-              <div className="flex flex-col gap-6 w-1/2">
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-100px' }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[180px] flex flex-col justify-end p-6 rounded-2xl"
-                >
+          {/* AI Agents */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[200px] md:min-h-[180px] flex flex-col justify-end p-6 rounded-2xl"
+          >
                   <div className="absolute inset-0 z-0">
                     <video
                       autoPlay
@@ -111,15 +106,16 @@ export default function Services() {
                       Smart assistants that handle tasks 24/7.
                     </p>
                   </div>
-                </motion.div>
+          </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-100px' }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[180px] flex flex-col justify-end p-6 rounded-2xl"
-                >
+          {/* CRM & ERP */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 min-h-[200px] md:min-h-[180px] flex flex-col justify-end p-6 rounded-2xl"
+          >
                   <div className="absolute inset-0 z-0">
                     <video
                       autoPlay
@@ -138,17 +134,16 @@ export default function Services() {
                       Integrated systems for seamless operations.
                     </p>
                   </div>
-                </motion.div>
-              </div>
+          </motion.div>
 
-              {/* Right - Lead Generation (tall) */}
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-100px' }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 w-1/2 min-h-[380px] flex flex-col justify-end p-6 rounded-2xl"
-              >
+          {/* Lead Generation */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="group relative overflow-hidden bg-black border border-white/10 hover:border-neon/30 transition-all duration-300 w-full min-h-[250px] md:min-h-[380px] flex flex-col justify-end p-6 rounded-2xl"
+          >
                 <div className="absolute inset-0 z-0">
                   <img
                     src="https://cdn.dribbble.com/userupload/45098293/file/f11b7c5ffe5d1b07a2c79847f953f21d.png?resize=1200x900&vertical=center"
@@ -163,10 +158,8 @@ export default function Services() {
                     Strategic campaigns that drive qualified leads and conversions.
                   </p>
                 </div>
-              </motion.div>
-            </div>
-          </div>
-          </div>
+          </motion.div>
+        </div>
           {/* End Bento Grid */}
         </div>
         {/* End Bento Grid Wrapper */}

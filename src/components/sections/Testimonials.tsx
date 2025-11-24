@@ -106,10 +106,10 @@ export default function Testimonials() {
         {/* Single Marquee Container with Fade Edges */}
         <div className="relative">
           {/* Left Fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-dark to-transparent z-10 pointer-events-none" />
           
           {/* Right Fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-dark to-transparent z-10 pointer-events-none" />
           
           {/* Single Row - Scroll Left */}
           <div className="overflow-hidden">

@@ -64,7 +64,7 @@ const PROJECTS = [
 export default function Projects() {
 
   return (
-    <section id="projects" className="relative bg-dark pt-48 pb-20">
+    <section id="projects" className="relative bg-dark pt-8 md:pt-48 pb-20">
       <div className="w-full">
         {/* Projects Grid - No Heading */}
         <div className="space-y-6">
@@ -123,8 +123,8 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      style={{ width: project.width }}
-      className="group w-full md:w-auto relative"
+      style={{ width: window.innerWidth < 768 ? '100%' : project.width }}
+      className="group w-full relative"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
