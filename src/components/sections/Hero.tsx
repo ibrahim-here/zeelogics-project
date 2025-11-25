@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block mb-4 md:mb-6"
+          className="inline-block mb-4 md:mb-6 mt-10 md:mt-0"
         >
           <span className="eyebrow px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-neon/10 border border-neon/30 text-neon backdrop-blur-sm text-xs md:text-sm">
             {HERO_CONTENT.eyebrow}
