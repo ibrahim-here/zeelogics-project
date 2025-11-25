@@ -17,7 +17,7 @@ const PROJECTS = [
     hoverImage: alfaMobile,
     url: 'https://www.alfa-verputzer-maler.de/',
     width: '60%',
-    height: 'h-[650px]',
+    height: 'h-[450px] md:h-[550px]',
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const PROJECTS = [
     image: luckyImage,
     url: 'https://luckycruz.org/',
     width: '40%',
-    height: 'h-[650px]',
+    height: 'h-[450px] md:h-[550px]',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const PROJECTS = [
     image: ndisImage,
     url: 'https://cherishlifecs.com.au/',
     width: '50%',
-    height: 'h-[700px]',
+    height: 'h-[450px] md:h-[600px]',
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const PROJECTS = [
     image: shorroshImage,
     url: 'http://shorroshfamilyfoundation.com',
     width: '50%',
-    height: 'h-[700px]',
+    height: 'h-[450px] md:h-[600px]',
   },
   {
     id: 5,
@@ -57,14 +57,14 @@ const PROJECTS = [
     image: texasImage,
     url: 'https://texascraftwings.com/',
     width: '45%',
-    height: 'h-[750px]',
+    height: 'h-[450px] md:h-[650px]',
   },
 ];
 
 export default function Projects() {
 
   return (
-    <section id="projects" className="relative bg-dark pt-8 md:pt-48 pb-20">
+    <section id="projects" className="relative bg-dark pt-0 md:pt-48 pb-20 -mt-20 md:mt-0">
       <div className="w-full">
         {/* Projects Grid - No Heading */}
         <div className="space-y-6">
