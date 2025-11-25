@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex h-[85vh] md:h-[60vh] flex-col items-center justify-center bg-dark overflow-visible pt-24 md:pt-32 -mx-10"
+      className="relative flex h-[85vh] md:h-[60vh] flex-col items-center justify-start md:justify-center bg-dark overflow-visible pt-24 md:pt-32 -mx-10"
     >
       {/* DarkVeil Background - Full Coverage */}
       <div className="absolute inset-0 z-0">
@@ -24,13 +24,13 @@ export default function Hero() {
       </div>
 
       {/* Content Container - No Glassmorphism */}
-      <div className="container mx-auto max-w-4xl text-center relative z-10 px-10">
+      <div className="container mx-auto max-w-4xl text-center relative z-10 px-10 mt-16 md:mt-0">
         {/* Eyebrow Text with Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block mb-4 md:mb-6 mt-12 md:mt-28"
+          className="inline-block mb-4 md:mb-6"
         >
           <span className="eyebrow px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-neon/10 border border-neon/30 text-neon backdrop-blur-sm text-xs md:text-sm">
             {HERO_CONTENT.eyebrow}
