@@ -16,7 +16,8 @@ export const COLORS = {
 // Hero Section Content
 export const HERO_CONTENT = {
   eyebrow: 'WE MAKE YOU VISIBLE',
-  heading: "People don't know you exist.",
+  heading: "People Don't Know",
+  headingSecond: 'You Exist',
   subheading:
     'We build systems, tools & experiences — design + data + automation + voice — so bold brands finally get seen.',
   primaryCTA: 'Get started',

@@ -70,20 +70,33 @@ export default function Projects() {
         <div className="space-y-6">
           {/* Row 1: Alfa (60%) - Lucky (40%) */}
           <div className="flex flex-col md:flex-row gap-6">
-            <ProjectCard project={PROJECTS[0]} index={0} />
-            <ProjectCard project={PROJECTS[1]} index={1} />
+            <ProjectCard project={PROJECTS[0]} />
+            <ProjectCard project={PROJECTS[1]} />
           </div>
 
           {/* Row 2: Cherish (50%) - Shorrosh (50%) */}
           <div className="flex flex-col md:flex-row gap-6">
-            <ProjectCard project={PROJECTS[2]} index={2} />
-            <ProjectCard project={PROJECTS[3]} index={3} />
+            <ProjectCard project={PROJECTS[2]} />
+            <ProjectCard project={PROJECTS[3]} />
           </div>
 
           {/* Row 3: Texas Crafts (45%) */}
           <div>
-            <ProjectCard project={PROJECTS[4]} index={4} />
+            <ProjectCard project={PROJECTS[4]} />
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <a
+            href="#calendly-placeholder"
+            className="inline-flex items-center px-8 py-4 bg-neon text-dark font-semibold rounded-full hover:shadow-[0_0_30px_rgba(231,255,0,0.6)] hover:scale-105 transition-all duration-300"
+          >
+            Start Your Project
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -102,10 +115,9 @@ interface ProjectCardProps {
     width: string;
     height: string;
   };
-  index: number;
 }
 
-function ProjectCard({ project, index }: ProjectCardProps) {
+function ProjectCard({ project }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
@@ -119,10 +131,8 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-100px' }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
+      initial={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       style={{ width: window.innerWidth < 768 ? '100%' : project.width }}
       className="group w-full relative"
       onMouseMove={handleMouseMove}

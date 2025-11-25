@@ -46,6 +46,19 @@ export default function AboutUs() {
           })}
         </div>
       </div>
+
+      {/* CTA Button */}
+      <div className="text-center mt-12">
+        <a
+          href="#calendly-placeholder"
+          className="inline-flex items-center px-8 py-4 bg-neon text-dark font-semibold rounded-full hover:shadow-[0_0_30px_rgba(231,255,0,0.6)] hover:scale-105 transition-all duration-300"
+        >
+          Learn More About Us
+          <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
     </SectionContainer>
   );
 }
