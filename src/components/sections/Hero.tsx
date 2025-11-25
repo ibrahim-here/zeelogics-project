@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex h-[50vh] md:h-[60vh] flex-col items-center justify-center bg-dark overflow-visible pt-24 md:pt-32 -mx-10"
+      className="relative flex h-[85vh] md:h-[60vh] flex-col items-center justify-center bg-dark overflow-visible pt-24 md:pt-32 -mx-10"
     >
       {/* DarkVeil Background - Full Coverage */}
       <div className="absolute inset-0 z-0">
