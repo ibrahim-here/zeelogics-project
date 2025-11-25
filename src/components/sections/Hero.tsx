@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-block mb-4 md:mb-6 mt-8 md:mt-14"
+          className="inline-block mb-4 md:mb-6 mt-12 md:mt-20"
         >
           <span className="eyebrow px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-neon/10 border border-neon/30 text-neon backdrop-blur-sm text-xs md:text-sm">
             {HERO_CONTENT.eyebrow}
@@ -45,7 +45,7 @@ export default function Hero() {
           className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 md:mb-14 text-text-primary leading-tight"
         >
           {HERO_CONTENT.heading}<br />
-          <span className="italic" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <span className="italic font-normal" style={{ fontFamily: 'Playfair Display, serif' }}>
             {HERO_CONTENT.headingSecond}
           </span>
         </motion.h1>
