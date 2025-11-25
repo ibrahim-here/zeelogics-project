@@ -64,7 +64,7 @@ const PROJECTS = [
 export default function Projects() {
 
   return (
-    <section id="projects" className="relative bg-dark pt-0 md:pt-48 pb-20 -mt-20 md:mt-0">
+    <section id="projects" className="relative bg-dark pt-0 md:pt-48 pb-20 -mt-8 md:mt-0">
       <div className="w-full">
         {/* Projects Grid - No Heading */}
         <div className="space-y-6">
